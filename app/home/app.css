@@ -1,0 +1,41 @@
+.resizable-component {
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.resizer {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #5e5e60;
+  cursor: se-resize;
+}
+
+.resizer.top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: n-resize;
+}
+
+.resizer.right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: e-resize;
+}
+
+.resizer.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: s-resize;
+}
+
+.resizer.left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: w-resize;
+}
